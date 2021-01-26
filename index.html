@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">LET'S TRY</a></li>
+            </ul>
+        </div>
+        <div class="content">
+                <div class="leftcol">
+                    <h1>THE <br> SOUND IS <br> AWESOME</h1>
+                </div>
+                    <div class="rightcol"><p>CLICK HERE TO LISTEN</p>
+                     <img id="icon" src="C:\Users\imran\Desktop\my project\512171.png" alt="">
+                </div>
+
+                    <audio id="mysong" src="Feels - Patrick Patrikios.mp3" type="audio/mp3" > </audio>
+
+                 </div>
+
+    </div>
+    <script>
+            var mysong = document.getElementById("mysong");
+            var icon =  document.getElementById("icon")
+            icon.onclick = function(){
+                if (mysong.paused){
+                    mysong.play();
+                    icon.src = '512171.png';
+                }else{
+                    mysong.pause();
+                    icon.src = 'playbutton.png';
+                }
+            }
+
+
+    </script>
+
+
+</body>
+</html>
