@@ -11,6 +11,8 @@
     background-position: center;
     position: relative;
     background-attachment: fixed;
+    overflow-x: hidden;
+}
 }
 .navbar{
     width: 100%;
