@@ -21,11 +21,13 @@
                     <h1>THE <br> SOUND IS <br> AWESOME</h1>
                 </div>
                     <div class="rightcol"><p>CLICK HERE TO LISTEN</p>
-                     <img id="icon" src="C:\Users\imran\Desktop\my project\512171.png" alt="">
+                     <img id="icon" src="playbutton.png" alt="">
                 </div>
 
-                    <audio id="mysong" src="Feels - Patrick Patrikios.mp3" type="audio/mp3" > </audio>
-                </div>
+                    <audio id="mysong" src='Feels - Patrick Patrikios.mp3' type="audio/mp3" > </audio>
+
+                 </div>
+
     </div>
     <script>
             var mysong = document.getElementById("mysong");
@@ -33,12 +35,16 @@
             icon.onclick = function(){
                 if (mysong.paused){
                     mysong.play();
-                    icon.src = '512171.png';
+                    icon.src = 'playbutton.png';
                 }else{
                     mysong.pause();
-                    icon.src = 'playbutton.png';
+                    icon.src = 'pause-button-circle_318-68038.png';
                 }
             }
+
+
     </script>
+
+
 </body>
 </html>
