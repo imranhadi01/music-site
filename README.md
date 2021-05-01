@@ -4,5 +4,5 @@ simply created by HTML,CSS,JS
 
 need to add some more music files and next and previous button
 
-https://imranhadi01.github.io/music-site/
+
 
